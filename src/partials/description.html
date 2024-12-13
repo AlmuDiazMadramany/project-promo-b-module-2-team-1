@@ -1,27 +1,44 @@
-<fieldset>
-    <p> 
-        <img src="/images/write_black.png" alt="">
-        Describe la <span>receta</span></p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/scss/layout/_description.scss">
+
+</head>
+<body>
+    
+
+
+<fieldset class="recipie-container">
+       <p class="title-container" > 
+         <img class="img"   src="/images/write_black.png" alt="">
+        Describe la  <span>receta:</span></p>
     
    
         <label for=""></label>
-        <input type="text" name="name" id="name" placeholder="Nombre de la receta" required/>
+        <input class="form-input" type="text" name="name" id="name" placeholder="Nombre de la receta" required/>
 
         <label for=""></label>
-        <input type="fyle" name="image" id="image" placeholder="Sube tu foto" required/>
+        <input class="form-input" type="file" name="image" id="image" placeholder="Sube tu foto" required/>
 
         <label for=""></label>
-        <input type="number" name="number" id="number" placeholder="número de comensales" required/>
+        <input class="form-input" type="number" name="number" id="number" placeholder="número de comensales" required/>
 
         <label for=""></label>
-        <input type="text" name="text" id="number" placeholder="tiempo de preparación ej 60 min" required/>
+        <input class="form-input" type="text" name="text" id="number" placeholder="tiempo de preparación ej: 60 min" required/>
 
         <label for=""></label>
-        <input type="text" name="text" id="text" placeholder="
-        Ingedientes" required/>
+        <input class="form-input" type="text" name="text" id="text" placeholder="
+        Ingredientes" required/>
 
         <label for=""></label>
-        <input type="number" name="number" id="number" placeholder="nivel de dificultad sobre 10"/>
+        <input class="form-input" type="number" name="number" id="number" placeholder="nivel de dificultad sobre 10"/>
    
  </fieldset>
+
+
+</body>
+</html>
     

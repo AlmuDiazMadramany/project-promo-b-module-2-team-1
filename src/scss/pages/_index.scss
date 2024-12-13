@@ -1,4 +1,70 @@
-.main__list {
-  padding-left: 2rem;
-  padding-bottom: 20px;
+body {
+    height: 100vh;
+    background-image: linear-gradient(rgba(163, 120, 69, 0.4), rgba(163, 120, 69, 0.4)), url("/images/background.jpg");
+    background-image: url("/images/background.jpg"), /* Imagen de fondo */ rgba(163, 120, 69, 0.4); /* Color semitransparente */
+    background-position-x: 10%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+}
+
+.logo {
+    max-width: 140px;
+}
+
+.h1 {
+    font-family: $font-main;
+    color: $color-white;
+    font-size: 32px;
+    font-weight: 100;
+    padding-top: 18px;
+    & span {
+        font-weight: bold;
+        font-size: 32px;
+    }
+}
+
+.textCrea {
+    font-family: $font-secondary;
+    color: $color-white;
+    font-size: 16px;
+    width: 200px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.containerLink {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.linkCrea {
+    font-family: $font-main;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: $color-orange;
+    padding: 8px 20px 8px 20px;
+    border-radius: 8px;
+    color: $color-white;
+}
+
+.textComparte {
+    font-family: $font-secondary;
+    color: $color-white;
+    font-size: 13px;
+    width: 200px;
+    text-align: center;
+    padding-top: 18px;
 }

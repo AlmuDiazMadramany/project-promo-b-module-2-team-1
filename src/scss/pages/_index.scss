@@ -1,7 +1,6 @@
 body {
     height: 100vh;
-    background-image: linear-gradient(rgba(163, 120, 69, 0.4), rgba(163, 120, 69, 0.4)), url("/images/background.jpg");
-    background-image: url("/images/background.jpg"), /* Imagen de fondo */ rgba(163, 120, 69, 0.4); /* Color semitransparente */
+    background-image: linear-gradient(rgba(163, 120, 69, 0.4), rgba(163, 120, 69, 0.3)), url("/images/background.jpg");
     background-position-x: 10%;
     background-size: cover;
     display: flex;
@@ -37,6 +36,7 @@ body {
 .textCrea {
     font-family: $font-secondary;
     color: $color-white;
+    font-weight: bold;
     font-size: 16px;
     width: 200px;
     text-align: center;
@@ -56,8 +56,9 @@ body {
     text-decoration: none;
     background-color: $color-orange;
     padding: 8px 20px 8px 20px;
-    border-radius: 8px;
+    border-radius: 10px;
     color: $color-white;
+    box-shadow: 0px 3px 15px rgba(109, 76, 35, 0.5);
 }
 
 .textComparte {
@@ -67,4 +68,34 @@ body {
     width: 200px;
     text-align: center;
     padding-top: 18px;
+}
+
+
+
+@media screen and (min-width: 1024px) {
+  .logo {
+    max-width: 140px;
+  }
+  
+  .h1{
+    font-size: 40px;
+    & span {
+        font-size: 40px;
+    }
+  }
+  
+  .textCrea {
+    font-size: 24px;
+    width: 300px;
+  }
+
+  .linkCrea {
+    font-size: 24px;
+    padding: 8px 38px 8px 38px;
+  }
+
+  .textComparte {
+    font-size: 21px;
+    width: 300px;
+  }
 }

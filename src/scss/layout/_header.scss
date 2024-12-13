@@ -1,9 +1,9 @@
 .header {
-  width: 100%;
+  width: 100vw;
   height: 50px;
-  position: sticky;
+  position: fixed;
   z-index: 100;
-  top: 0; //me queda un espacio arriba que no se como quitar
+  top: 0; 
   background-color: $color-brown;
   font-family: $font-main;
   color: $color-white; //no se be bien el color blanco

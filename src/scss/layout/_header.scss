@@ -7,7 +7,7 @@
   background-color: $color-brown;
   font-family: $font-main;
   color: $color-white; //no se be bien el color blanco
-  font-size: 4rem; //he puesto la letra mas grande
+  font-size: 2.5rem; //he puesto la letra mas grande
   display: flex;
   justify-content: center;
   align-items: center;  
@@ -19,14 +19,14 @@
 .header_span{
     font-family: $font-main;
     color: $color-white;
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     font-weight: bold;
     
   }
 
 .logoheader{
   background-color: $color-brown;
-  width: 40px;
+  width: 30px;
 }
 
 // .page__header {

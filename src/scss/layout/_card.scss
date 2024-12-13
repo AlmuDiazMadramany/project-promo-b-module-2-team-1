@@ -1,8 +1,167 @@
+// Base de la tarjeta:
 
 .card {
-    background-color: blue;
+    background-color: #E6E0db;
+    color: black; 
+    font-family: 'Courier New', Courier, monospace;
+  
+    .recipe1{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        padding-left: 20px;
+        padding-top: 20px;
+        padding-right: 20px;
+
+        &_image{
+            grid-column: span 2;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        
+        &_mainrecipe{
+            grid-column: span 1;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-content: stretch;
+            justify-content: flex-start;
+            padding: 10px;
+
+            &_title{
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 25px;
+                padding: 10px;
+            }
+
+            &_diners{
+                font-size: 16px;
+                padding: 10px;
+
+            }
+
+            &_time{
+                font-size: 16px;
+                padding: 10px;
+
+            }
+        }
+
+
+
+
+
+    }
+
+    .recipe2{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        padding: 20px;
+        align-items: stretch;
+
+        &_ingredients{
+            grid-column: span 1;
+            background-color: white;
+            padding: 10px;
+            
+            &_title{
+                border-bottom: 1px solid black;
+                align-items: flex-start;
+                font-size: 16px;
+            }
+            &_input{
+                font-size: 12px;
+            }
+            
+        }
+        &_steps{
+            grid-column: span 2;
+            background-color: white;
+            padding: 10px;
+
+            &_title{
+                border-bottom: 1px solid black;
+                align-items: flex-start;
+                font-size: 16px;
+
+            }
+            &_input{
+                font-size: 12px;
+            }
+            
+        }
+    }
 }
 
-.recipe1{
-    color: aqua;
-}
+// Tema 1
+.card.theme-1 {
+    background-color: #E6E0db;
+    color: black; 
+    font-family: 'Courier New', Courier, monospace;
+  
+  
+    .recipe1_mainrecipe {
+      background-color: white;
+    }
+  
+    .recipe2_ingredients,
+    .recipe2_steps {
+      background-color: white;
+    }
+  }
+  
+  // Tema 2
+  .card.theme-2 {
+    background-color: white;
+    border: 10px solid black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+  
+    .recipe1_mainrecipe {
+      background-color: white;
+      justify-content: center;
+      align-items: center;
+      
+    }
+  
+    .recipe2_ingredients,
+    .recipe2_steps {
+      background-color: white;
+      border: 2px solid black;
+    }
+
+    .recipe2_ingredients_title{
+        border-bottom: none;
+        font-weight: bold;
+    }
+    .recipe2_steps_title{
+        border-bottom: none;
+        font-weight: bold;
+    }
+    
+
+  }
+  
+  // Tema 3
+  .card.theme-3 {
+    background-color: #1A1A1A;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+  
+    .recipe1_mainrecipe {
+      background-color: #1A1A1A;
+    }
+
+    .recipe1_mainrecipe_title{
+        border-bottom: 2px solid white;
+    }
+    
+    .recipe2_ingredients,
+    .recipe2_steps {
+      background-color: #E6E0db;
+      color: #1A1A1A;
+    }
+  }

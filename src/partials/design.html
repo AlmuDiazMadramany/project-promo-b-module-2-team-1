@@ -1,15 +1,44 @@
-<fieldset>
-    <p> <img  class="design_img" src="/images/design_black.png" alt=""> Elige tu <span>diseño</span></p>
-    <label for="">Vintage</label>
-        <input type="radio">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>description</title>
+    <link rel="stylesheet" href="/scss/layout/_design.scss">
+</head>
+<body>
     
 
-    <label for="">Bordeado</label>
-        <input type="radio">
-    
 
-    <label for="">Fondo oscuro</label>
-        <input type="radio">
-    
+<fieldset class="firstform-container" >
+    <p class="firstform-title" >
+         <img  class="design_img" src="/images/design_black.png" alt=""> 
+         Elige tu <span class="highlight" >diseño:</span>
+    </p>
+    <div class="design-options">
+        <label class="design-option">
+            <input type="radio" name="design" value="vintage">
+            <div class="option-circle">1</div>
+            <span class="option-text">Vintage</span>
+        </label>
+        <label class="design-option">
+            <input type="radio" name="design" value="bordeado">
+            <div class="option-circle">2</div>
+            <span class="option-text">Bordeado</span>
+        </label>
+        <label class="design-option">
+            <input type="radio" name="design" value="fondo-oscuro">
+            <div class="option-circle">3</div>
+            <span class="option-text">Fondo oscuro</span>
+        </label>
+    </div>
 
     </fieldset>
+
+
+
+</body>
+</html>
+
+
+ 

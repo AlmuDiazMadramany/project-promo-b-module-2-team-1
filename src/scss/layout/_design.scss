@@ -1,0 +1,71 @@
+
+
+
+.firstform-container{
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 40px;
+    max-width: 400px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.firstform-title{
+    font-size: 1.2rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+
+}
+
+
+ //chequear imagen, no me hace caso en ninguna modificacion
+.design-img {
+    width: 5px;
+    height: 5px;
+    margin-right: 9px;
+}
+
+.highlight{
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+
+/* Contenedor de opciones de diseño */
+.design-options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+
+/* Texto de las opciones */
+.option-text {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+
+    
+}
+
+
+.option-circle{
+    border: 2px solid #ccc;
+    background-color: rgba(196, 193, 193, 0.842);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: bold;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+
+}

@@ -35,15 +35,33 @@
                 padding: 10px;
             }
 
-            &_diners{
+            
+
+            &_dinerstile{
                 font-size: 16px;
-                padding: 10px;
+                padding-left: 10px;
+                margin: 0px;
 
             }
 
-            &_time{
+            &_dinersinput{
                 font-size: 16px;
-                padding: 10px;
+                padding-left: 10px;
+                margin: 0px;
+                margin-bottom: 20px;
+
+            }
+
+            &_timetitle{
+                font-size: 16px;
+                padding-left: 10px;
+                margin: 0px;
+
+            }
+            &_timeinput{
+                font-size: 16px;
+                padding-left: 10px;
+                margin: 0px;
 
             }
         }

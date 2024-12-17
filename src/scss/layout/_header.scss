@@ -1,7 +1,7 @@
 .header {
   width: 100vw;
   height: 50px;
-  position: fixed;
+  position: sticky;
   z-index: 100;
   top: 0; 
   background-color: $color-brown;

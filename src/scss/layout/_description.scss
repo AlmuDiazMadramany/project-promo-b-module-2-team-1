@@ -1,0 +1,66 @@
+
+
+/*Contenedor del segundo formulario */
+
+
+.recipie-container{
+     border: 2px solid #ccc;
+     border-radius: 8px;
+     padding: 40px;
+     max-width: 400px;
+     margin: 20px auto;
+     display: flex;
+     flex-direction: column;
+
+
+}
+
+/* titulo del form */
+
+.title-container{
+    font-family: 'Courier New', Courier, monospace ;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+
+    .img{
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+    }
+}
+span{
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/*etiquetas inputs */
+
+.form-input{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+.form-input::placeholder{
+    color: #999;
+    font-style: italic;
+}
+
+
+/* 
+input[type="file"]::file-selector-button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+
+input[type="file"]::file-selector-button:hover {
+    color: brown;
+}
+ */
+
+
+ //holisss

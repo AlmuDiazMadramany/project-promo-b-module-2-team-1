@@ -1,13 +1,11 @@
-/*
-@import 'layout/header';
-@import 'layout/footer';
-@import 'pages/index';*/
-
-@import 'layout/form';
-@import 'layout/design';
 @import 'core/variables';
 @import 'core/reset';
+
+@import 'layout/description';
+@import 'layout/design';
 @import 'layout/card';
-@import 'pages/index';
-@import 'layout/header';
 @import 'layout/footer';
+@import 'layout/header';
+
+
+@import 'pages/index';

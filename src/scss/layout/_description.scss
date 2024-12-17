@@ -70,7 +70,7 @@ input[type="file"]::file-selector-button:hover {
  */
 
 
-  /* En tablet, mantenemos una columna y agrandamos un poco la fuente y el padding */
+  /* En tablet, igual  column y agrandar fuente y padding */
  @media (min-width: 768px) {
     .recipie-container {
       max-width: 80vw;
@@ -112,10 +112,7 @@ input[type="file"]::file-selector-button:hover {
       padding: 10px;   
     }
   
-    /* Si quieres que el textarea ocupe todo el ancho, lo puedes dejar así 
-    .form-input--description {
-     width: 100%;
-    }*/
+
   }
   
    

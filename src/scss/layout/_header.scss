@@ -1,8 +1,37 @@
-.page__header {
+.header {
+  width: 100vw;
+  height: 50px;
+  position: fixed;
+  z-index: 100;
+  top: 0; 
+  background-color: $color-brown;
+  font-family: $font-main;
+  color: $color-white; //no se be bien el color blanco
+  font-size: 2.5rem; //he puesto la letra mas grande
   display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+  justify-content: center;
+  align-items: center;  
+
+  &_p {
+    padding-left: 10px;
+  }  
 }
+.header_span{
+    font-family: $font-main;
+    color: $color-white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    
+  }
+
 .logoheader{
   background-color: $color-brown;
+  width: 30px;
 }
+
+// .page__header {
+//   display: flex;
+//   justify-content: space-evenly;
+//   margin-bottom: 3rem;
+// }
+//nose donde esta esta classe

@@ -1,8 +1,21 @@
-.page__footer {
+.footer {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100vw;
-  padding: 1rem;
-  color: $color-secondary;
+  height: 50px;
+  color: $color-white;
+  background-color: $color-black;
+  font-family: $font-main;
+
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.footer_span {
+  font-family: $font-main;
+  font-weight: bold;
+  font-size: 1.4rem;
 }

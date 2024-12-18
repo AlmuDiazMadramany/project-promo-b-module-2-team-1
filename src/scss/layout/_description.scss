@@ -6,11 +6,12 @@
 .recipie-container{
      border: 2px solid #ccc;
      border-radius: 8px;
-     padding: 40px 110px;
+     padding: 50px;
      max-width: 100vh;
      margin: 20px 10px;
      display: flex;
      flex-direction: column;
+     gap: 10px;
 
 
 }
@@ -49,7 +50,12 @@
     width: 100%;
     margin-bottom: 5px;
     font-size: 12px;
+    
+}
 
+.textarea{
+  resize: none;
+  height: 80px;
 }
 
 

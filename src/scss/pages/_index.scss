@@ -5,9 +5,16 @@
     background-size: cover;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
+    justify-content: space-between;
+}
+
+.landingMain {
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
 }
 
 .article {
@@ -85,7 +92,7 @@
   }
   
   .textCrea {
-    font-size: 24px;
+    font-size: 20px;
     width: 300px;
   }
 
@@ -95,7 +102,7 @@
   }
 
   .textComparte {
-    font-size: 21px;
-    width: 300px;
+    font-size: 18px;
+    width: 230px;
   }
 }

@@ -1,7 +1,16 @@
+.redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
 .redes-sociales {
     text-align: center; 
     font-family: Arial, sans-serif; 
     color: #a88b68; 
+    margin-bottom: 100px;
 }
   
 .redes-sociales p {

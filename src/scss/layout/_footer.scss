@@ -1,11 +1,24 @@
 .footer {
-  position: fixed;
   left: 0;
   bottom: 0;
   width: 100vw;
   height: 50px;
   color: $color-white;
   background-color: $color-black;
+  font-family: $font-main;
+
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.footerLanding {
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 50px;
+  color: $color-white;
   font-family: $font-main;
 
   font-size: 2rem;

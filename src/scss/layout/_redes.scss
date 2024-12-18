@@ -1,0 +1,30 @@
+.redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.redes-sociales {
+    text-align: center; 
+    font-family: Arial, sans-serif; 
+    color: #a88b68; 
+    margin-bottom: 100px;
+}
+  
+.redes-sociales p {
+    margin-bottom: 10px; /* Espacio entre el texto y los íconos */
+    font-size: 18px; 
+}
+  
+.icons img {
+    width: 50px; 
+    margin: 0 10px; /* Espacio horizontal entre íconos */
+    cursor: pointer; /* Cambia al pasar por encima */
+    transition: transform 0.3s ease; /* Efecto suave al pasar el cursor */
+}
+  
+.icons img:hover {
+    transform: scale(1.1); /* Aumento de tamaño al pasar el cursor */
+}

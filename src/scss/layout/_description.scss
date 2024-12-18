@@ -86,33 +86,33 @@ input[type="file"]::file-selector-button:hover {
 
 
 /* Desktop */
-@media (min-width: 1024px) {
-    .recipie-container {
-      max-width: 70vw; 
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      //margin: 20px 0 20px 40px; 
-      padding: 50px 80px;
-    }
+// @media (min-width: 1024px) {
+//     .recipie-container {
+//       max-width: 70vw; 
+//       flex-direction: row;
+//       flex-wrap: wrap;
+//       justify-content: space-between;
+//       //margin: 20px 0 20px 40px; 
+//       padding: 50px 80px;
+//     }
   
-    .title-container {
-      width: 100%;
-      margin-bottom: 50px;
-      font-size: 24px; 
-    }
+//     .title-container {
+//       width: 100%;
+//       margin-bottom: 50px;
+//       font-size: 24px; 
+//     }
   
-    .highlight_description {
-      font-size: 24px; 
-    }
+//     .highlight_description {
+//       font-size: 24px; 
+//     }
   
-    .form-input {
-      width: 48%;
-      font-size: 16px; 
-      padding: 10px;   
-    }
+//     .form-input {
+//       width: 48%;
+//       font-size: 16px; 
+//       padding: 10px;   
+//     }
   
 
-  }
+//   }
   
    

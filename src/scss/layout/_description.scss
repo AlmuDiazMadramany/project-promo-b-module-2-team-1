@@ -6,7 +6,7 @@
 .recipie-container{
      border: 2px solid #ccc;
      border-radius: 8px;
-     padding: 40px;
+     padding: 40px 110px;
      max-width: 100vh;
      margin: 20px 10px;
      display: flex;
@@ -18,7 +18,10 @@
 /* titulo del form */
 
 .title-container{
+    border: 2px solid #ccc;
+    border-radius: 10px;
     font-family: 'Courier New', Courier, monospace ;
+    padding: 20px;
     font-size: 20px;
     display: flex;
     align-items: center;
@@ -43,6 +46,7 @@
 
 .form-input{
     display: block;
+    width: 100%;
     margin-bottom: 5px;
     font-size: 12px;
 
@@ -75,7 +79,8 @@ input[type="file"]::file-selector-button:hover {
     .recipie-container {
       max-width: 80vw;
       margin: 20px auto;
-      padding: 40px 60px;
+      //padding: 40px 60px;
+      padding: 40px 110px;
     }
     
     .form-input {
@@ -89,11 +94,12 @@ input[type="file"]::file-selector-button:hover {
 @media (min-width: 1024px) {
     .recipie-container {
       max-width: 70vw; 
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      //margin: 20px 0 20px 40px; 
-      padding: 50px 80px;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      //margin: 20px auto;
+      //padding: 50px 60px 50px 40px;
+      padding: 40px 90px;
     }
   
     .title-container {
@@ -107,9 +113,10 @@ input[type="file"]::file-selector-button:hover {
     }
   
     .form-input {
-      width: 48%;
+      width: 100%;
       font-size: 16px; 
-      padding: 10px;   
+      padding: 10px; 
+      margin-bottom: 20px;  
     }
   
 

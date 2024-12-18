@@ -1,21 +1,29 @@
 
 <fieldset class="firstform-container" >
-    <fieldset class="form_desing">
-        <img  class="design_img" src="/images/design_black.png" alt=""> 
-        <p class="firstform-title">Elige tu <span class="highlight">diseño:</span></p>
+    <fieldset class="form_design">
+        <div class="form_desing_text">
+            <img  class="design_img" src="/images/design_black.png" alt="">
+            <p class="firstform-title">Elige tu <span class="highlight">diseño</span></p>
+        </div>
+        <a href="#options_design"><img class="btn_down" src="/images/chevron-down-solid.svg" alt=""></a>
     </fieldset>
-    <div class="div_design">
-        <div class="desgin_options">
-        <a href="" class="option-circle" id="field2">1</a>
-        <span class="option-text">Vintage</span></div>
-
-        <div class="desgin_options">
-        <a href="" class="option-circle" id="field2">2</a>
-        <span class="option-text">Bordeado</span></div>
-
-        <div class="desgin_options">
-        <a href="" class="option-circle" id="field2">3</a>
-        <span class="option-text">Oscuro</span></div>
+    <div class="div_design" id="options_design">
+        <label class="design_options">
+            <input type="radio" name="design" value="vintage" id="field2" class="input_hidden">
+            <div class="option-circle">1</div>
+            <span class="option-text">Vintage</span>
+        </label>
+        <label class="design_options">
+            <input type="radio" name="design" value="bordeado" id="field2" class="input_hidden">
+            <div class="option-circle">2</div>
+            <span class="option-text">Bordeado</span>
+        </label>
+        <label class="design_options">
+            <input type="radio" name="design" value="fondo-oscuro" id="field2" class="input_hidden">
+            <div class="option-circle">3</div>
+            <span class="option-text">Oscuro</span>
+        </label>
+       
     </div>
 <!--podemos poner a o necesitamos poner inputs para seleccionar el diseño de la targeta?-->
     </fieldset>

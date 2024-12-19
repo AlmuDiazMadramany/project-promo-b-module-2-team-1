@@ -1,12 +1,26 @@
+.container-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    width: 65%;
+}
 .btn {
-    width: 38%;
-    color: $color-white;
-    font-family: $font-main;
-    font-size: 32px;
+    padding: 6px 45px;
     background-color: $color-black;
     border-radius: 10px;
-    text-align: center;
+    border: none;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    color: $color-white;
+    font-family: $font-main;
+    font-size: 23px;
+    cursor: pointer;
 }
 .btn-img{
-    width: 20px;
+    width: 23px;
+    transform: translateX(-5px);
+    
 }
+.btn:hover {
+    background-color: $color-orange;}

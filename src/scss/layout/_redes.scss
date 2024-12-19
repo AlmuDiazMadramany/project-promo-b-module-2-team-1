@@ -5,12 +5,16 @@
 }
 
 .redes-sociales {
+    width: 30%;
     text-align: center; 
     font-family: Arial, sans-serif; 
     color: $color-orange;
     margin-top: 10px; 
     margin-bottom: 20px; /* Espacio entre el texto y los íconos */
     font-size:21px;
+    @media (min-width: 1024px){
+        width: 100%;
+    }
 }
   
 .icons img {

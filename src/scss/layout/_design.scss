@@ -2,13 +2,13 @@
 .firstform-container{
     border: 2px solid #ccc;
     border-radius: 8px;
-    padding: 15px;
+    padding: 20px;
     max-width: 100vh;
     margin: 30px 10px;
     @media (min-width: 768px) {
           max-width: 80vw;
-          margin: 30px auto;
-          padding: 40px 40px;
+          margin: 20px auto;
+          padding: 40px 80px;
         }
     
 
@@ -20,15 +20,13 @@
     justify-content: space-between;
     align-items: center;
     border: 2px solid #ccc;
-    border-radius: 8px;
-    padding: 5px 10px;
+    border-radius: 10px;
+    padding: 20px;
 }
 .form_desing_text {
     display: flex;
     flex-direction: row;
-    padding: 5px;
     align-items: center;
-    border-radius: 8px;
 }
 
 .firstform-title{

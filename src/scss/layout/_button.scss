@@ -1,12 +1,22 @@
+.container-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
 .btn {
-    width: 38%;
+    padding: 9px 97px;
     color: $color-white;
     font-family: $font-main;
     font-size: 32px;
     background-color: $color-black;
     border-radius: 10px;
+    border: none;
     text-align: center;
 }
 .btn-img{
     width: 20px;
 }
+.btn:hover {
+    background-color: $color-orange;}

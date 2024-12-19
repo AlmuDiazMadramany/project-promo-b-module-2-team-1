@@ -7,4 +7,4 @@ const handleInputRadio = ()=>{
     sectionCard.classList.remove("theme-2", "theme-3");
 }
 
-radio1.addEventListener("input", handleInputRadio)
+radio1.addEventListener("input", handleInputRadio);

@@ -13,16 +13,16 @@ const data = {
 }
 
 // Identificamos el formulario
-const form = document.querySelector('.js-form');
+const form = document.querySelector('.js-form'); // OK
 
 
 // Identificamos los elementos de la preview
-const comensales = document.querySelector('.recipe1_mainrecipe_diners');
+const comensales = document.querySelector('.recipe1_mainrecipe_dinersinput'); // OK
 // const design = document.querySelector('');
-const nombre = document.querySelector('.recipe1_mainrecipe_title');
-const tiempo = document.querySelector('.recipe1_mainrecipe_time');
-const ingredientes = document.querySelector('.recipe2_ingredients_input');
-const pasos = document.querySelector('.recipe2_steps_input');
+const nombre = document.querySelector('.recipe1_mainrecipe_title'); // OK
+const tiempo = document.querySelector('.recipe1_mainrecipe_timeinput'); // OK
+const ingredientes = document.querySelector('.recipe2_ingredients_input'); // OK
+const pasos = document.querySelector('.recipe2_steps_input'); // OK
 // const imagen = document.querySelector('.recipe1_image');
 
 
@@ -39,12 +39,10 @@ function render() {
 function handleForm(event) {
     const id = event.target.id;
     const value = event.target.value;
-
     data[id] = value;
     console.log(data);
     render();
 }
 
-
 // Llamamos a la función que actualiza la preview
-form.addEventListener('input', handleForm);
+form.addEventListener('input', handleForm); // OK

@@ -4,13 +4,14 @@
     background-color: #E6E0db;
     color: black; 
     font-family: 'Courier New', Courier, monospace;
-    margin-top: 50px;
+    margin-top: 25px;
     width: 90%;
     height: auto;
     margin-left: 20px;
 
     @media (min-width: 768px) {
         margin-left: 40px;
+        height: 38%;
     }
   
     .recipe1{

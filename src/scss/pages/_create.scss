@@ -9,7 +9,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 @media (min-width: 1024px) {
@@ -17,10 +16,8 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
-        margin-bottom: 30px;
-    }
-
-    .card {
-        width: 600px;
+        justify-items: center;
+        margin-bottom: 60px;
+        margin-top: 60px;
     }
 }

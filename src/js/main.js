@@ -1,5 +1,6 @@
 'use strict';
-import "./2_change_theme.js"
+import "./2_change_theme.js";
+import "./collapsed.js";
 
 // Declaramos el objeto, compatible con la API
 const data = {
@@ -47,3 +48,4 @@ function handleForm(event) {
 
 // Llamamos a la función que actualiza la preview
 form.addEventListener('input', handleForm);
+

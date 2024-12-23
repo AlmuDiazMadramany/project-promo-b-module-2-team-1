@@ -11,6 +11,10 @@
     align-items: center;
 }
 
+.collapsed {
+    display: none;
+}
+
 @media (min-width: 1024px) {
     .createpreview {
         display: grid;

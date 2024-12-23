@@ -1,3 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+
 .createBody {
     background-color: $color-background;
     display: flex;
@@ -17,5 +25,6 @@
         grid-template-columns: 1fr 1fr;
         margin-bottom: 60px;
         margin-top: 60px;
+        overflow-x: hidden;
     }
 }

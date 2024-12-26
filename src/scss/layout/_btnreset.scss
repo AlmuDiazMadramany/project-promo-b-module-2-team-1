@@ -1,0 +1,27 @@
+
+.container-btnreset{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    width: 65%;
+}
+.btnreset {
+    padding: 6px 45px;
+    background-color: $color-black;
+    border-radius: 10px;
+    border: none;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    color: $color-white;
+    font-family: $font-main;
+    font-size: 23px;
+    cursor: pointer;
+}
+.btnreset-img{
+    width: 23px;
+    transform: translateX(-5px);
+    
+}
+.btnreset:hover{
+    background-color: $color-orange;}

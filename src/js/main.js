@@ -1,5 +1,6 @@
 'use strict';
 import "./2_change_theme.js"
+import "./btn_reset.js"; //AnaE importar btnreset
 
 // Declaramos el objeto, compatible con la API
 const data = {

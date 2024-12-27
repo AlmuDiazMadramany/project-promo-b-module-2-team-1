@@ -1,45 +1,25 @@
-//collapsed de los formularios
-//clase collapsed en layout create
-const design = document.querySelector(".js-design");
-const description = document.querySelector(".js-description");
-const btnDesign = document.querySelector(".js-btn-design");
-const btnDescription = document.querySelector(".js-btn-description");
+// Espera que el document estigui carregat
+document.addEventListener('DOMContentLoaded', function() {
+    // Botones para mostrar o esconder las secciones
+    const descriptionBtn = document.querySelector('.js-btn-description');
+    const designBtn = document.querySelector('.js-btn-design');
 
-function handleClickDesign (ev) {
-    ev.preventDefault();
-    design.classList.remove(".collapsed");
-}
+    // Selecciones a mostrar o esconder
+    const descriptionSection = document.querySelector('.js-description');
+    const designSection = document.querySelector('.js-design');
 
-function handleClickDescription (ev) {
-    ev.preventDefault();    
-    description.classList.remove(".collapsed");
-}
+    // Función que alterna la clase 'collapsed' en la sección
+    function toggleSection(section) {
+        section.classList.toggle('collapsed');
+    }
 
+    descriptionBtn.addEventListener('click', function(event) {
+        event.preventDefault(); 
+        toggleSection(descriptionSection); // Alterna la visibilidad de la sección
+    });
 
-btnDesign.addEventListener("click", handleClickDesign);
-btnDescription.addEventListener("click", handleClickDescription);
-
-// function showNewCatForm() {
-//     newForm.classList.remove("collapsed");
-// }
-
-// function hideNewCatForm() {
-//   newForm.classList.add("collapsed");
-// }
-
-// function handleClickNewCatForm (event) {
-//   event.preventDefault();
-//   if (newForm.classList.contains("collapsed")){
-//     showNewCatForm()
-
-//    } else {
-//     hideNewCatForm()
-//    };
-
-// };
-
-// buttonAdd.addEventListener("click", handleClickNewCatForm);
-
-// buttonCancel.addEventListener("click", () => {
-//   newForm.classList.add("collapsed");
-//   formCats.reset()});
+    designBtn.addEventListener('click', function(event) {
+        event.preventDefault();
+        toggleSection(designSection);
+    });
+});

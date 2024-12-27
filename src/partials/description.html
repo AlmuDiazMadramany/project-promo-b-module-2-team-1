@@ -1,24 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/scss/layout/_description.scss">
-
-</head>
-<body>
-    
-
-
 <fieldset class="recipie-container">
-       <p class="title-container" > 
+       <p class="title-container js-btn-description" > 
          <img class="img"   src="/images/write_black.png" alt="">
         Describe la <span class="highlight_description">receta     </span>
-        <a href="#options_design"><img class="btn_down js-btn-description" src="/images/chevron-down-solid.svg" alt=""></a></p>
+        <a href="#options_design"><img class="btn_down" src="/images/chevron-down-solid.svg" alt=""></a></p>
     
    
-        <form class="collapsed js-description">
+        <div class="collapsed js-description">
           <input class="form-input" type="text" name="name" id="field3" placeholder=" Nombre de la receta" required/>
           <input class="form-input" type="file" name="image" id="photo" placeholder=" Sube tu foto" required/>
           <input class="form-input" type="number" name="number" id="field1" placeholder=" Número de comensales" required/>
@@ -26,10 +13,5 @@
           
           <textarea class="form-input textarea" type="text" name="text" id="field5" placeholder=" Ingredientes" required></textarea> <!-- patri corregido ID -->
           <textarea class="form-input textarea" type="number" name="number" id="field6" placeholder=" Pasos"></textarea>
-        </form>
+        </div>
 </fieldset>
-
-
-</body>
-</html>
-    

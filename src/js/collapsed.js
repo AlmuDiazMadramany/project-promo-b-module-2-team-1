@@ -1,16 +1,17 @@
 //collapsed de los formularios
-//clase hidden en layout create
+//clase collapsed en layout create
 const design = document.querySelector(".js-design");
 const description = document.querySelector(".js-description");
 const btnDesign = document.querySelector(".js-btn-design");
 const btnDescription = document.querySelector(".js-btn-description");
 
 function handleClickDesign (ev) {
-    
+    ev.preventDefault();
     design.classList.remove(".collapsed");
 }
 
-function handleClickDescription () {
+function handleClickDescription (ev) {
+    ev.preventDefault();    
     description.classList.remove(".collapsed");
 }
 

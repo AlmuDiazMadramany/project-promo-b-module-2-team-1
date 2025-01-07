@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
+    //overflow-x: hidden;
   }
 
 
@@ -26,5 +26,13 @@
         margin-bottom: 60px;
         margin-top: 60px;
         overflow-x: hidden;
+        width: auto;
+        height: auto;
+        
+        /*
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        height: auto;*/
     }
 }

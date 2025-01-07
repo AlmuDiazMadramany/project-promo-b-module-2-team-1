@@ -1,4 +1,4 @@
-// Espera que el document estigui carregat
+// Espera que el documento este cargado
 document.addEventListener('DOMContentLoaded', function() {
     // Botones para mostrar o esconder las secciones
     const descriptionBtn = document.querySelector('.js-btn-description');

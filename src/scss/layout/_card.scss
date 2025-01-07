@@ -5,12 +5,15 @@
     color: black; 
     font-family: 'Courier New', Courier, monospace;
     margin-top: 25px;
+    margin-left: 8px;
+    margin-right: 8px;
     width: auto;
     height: auto;
-    margin-left: 20px;
+    
 
     @media (min-width: 768px) {
-        margin-left: 40px;
+        margin-left: 13px;
+        margin-right: 13px;
         width: auto;
         height: auto;
        

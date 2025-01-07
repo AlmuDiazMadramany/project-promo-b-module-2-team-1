@@ -1,6 +1,10 @@
 'use strict';
-import "./2_change_theme.js"
-import "./btn_reset.js"; //AnaE importar btnreset
+
+import "./btn_reset.js"; 
+import "./2_change_theme.js";
+import "./collapsed.js";
+import "./get-avatar.js";
+import "./redes.js";
 
 // Declaramos el objeto, compatible con la API
 const data = {
@@ -48,3 +52,4 @@ function handleForm(event) {
 
 // Llamamos a la función que actualiza la preview
 form.addEventListener('input', handleForm);
+

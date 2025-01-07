@@ -12,8 +12,8 @@
     text-align: center; 
     font-family: Arial, sans-serif; 
     color: $color-orange; 
-    margin-bottom: 45px;
-    
+    margin-bottom: 35px;
+    margin-top: 25px;    
 }
   
 .redes-sociales p {
@@ -21,8 +21,9 @@
 }
   
 .icons img {
-    width: 30px; 
-    margin: 0 10px 20px; /* Espacio horizontal entre íconos */
+    width: 25px; 
+    margin: 0 5px 10px; /* Espacio horizontal entre íconos */
+    padding-top: 35px;
     cursor: pointer; /* Cambia al pasar por encima */
     transition: transform 0.7s ease; /* Efecto suave al pasar el cursor */
 }

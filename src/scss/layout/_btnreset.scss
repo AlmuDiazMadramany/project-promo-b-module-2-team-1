@@ -24,4 +24,7 @@
     
 }
 .btnreset:hover{
-    background-color: $color-orange;}
+    background-color: $color-orange;
+    transform: scale(1.1); /* Aumento de tamaño al pasar el mouse */
+    transition: transform 0.1s ease; /* Efecto suave al pasar el cursor */
+}

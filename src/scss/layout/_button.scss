@@ -24,6 +24,6 @@
 }
 .btn:hover {
     transform: scale(1.1); /* Aumento de tamaño al pasar el mouse */
-    transition: transform 0.7s ease; /* Efecto suave al pasar el cursor */
+    transition: transform 0.1s ease; /* Efecto suave al pasar el cursor */
     background-color: $color-orange;
 }

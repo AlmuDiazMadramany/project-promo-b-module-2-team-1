@@ -1,6 +1,8 @@
 'use strict';
 import "./2_change_theme.js";
 import "./collapsed.js";
+import "./get-avatar.js";
+import "./redes.js";
 
 // Declaramos el objeto, compatible con la API
 const data = {

@@ -1,29 +1,32 @@
-.redes {
+.hidden{ /*Display para esconder los iconos de redes*/
+    display: none;
+}
+
+.redes {/*Display para los iconos de redes*/
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .redes-sociales {
-    width: 30%;
     text-align: center; 
     font-family: Arial, sans-serif; 
-    color: $color-orange;
-    margin-top: 10px; 
-    margin-bottom: 20px; /* Espacio entre el texto y los íconos */
-    font-size:21px;
-    @media (min-width: 1024px){
-        width: 100%;
-    }
+    color: $color-orange; 
+    margin-bottom: 45px;
+    
+}
+  
+.redes-sociales p {
+    font-size: 16px; 
 }
   
 .icons img {
-    width: 20px; 
-    margin: 0 4px 30px; /* Espacio horizontal entre íconos */
+    width: 30px; 
+    margin: 0 10px 20px; /* Espacio horizontal entre íconos */
     cursor: pointer; /* Cambia al pasar por encima */
-    transition: transform 0.3s ease; /* Efecto suave al pasar el cursor */
+    transition: transform 0.7s ease; /* Efecto suave al pasar el cursor */
 }
   
 .icons img:hover {
-    transform: scale(1.1); /* Aumento de tamaño al pasar el cursor */
+    transform: scale(0.8); /* cambia de tamaño al pasar el mouse */
 }

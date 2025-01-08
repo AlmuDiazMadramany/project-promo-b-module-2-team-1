@@ -15,6 +15,12 @@
 
 .cardstyle{
     height: auto;
+    margin-left: 30px;
+    margin-right: 30px;
+    @media (min-width: 1024px){
+        margin-right: 0;
+        margin-left: 60px;
+    }
 }
 .createform {
     display: flex;

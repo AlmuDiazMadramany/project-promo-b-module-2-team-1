@@ -1,4 +1,20 @@
 .cardstyleShare{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+.linkCreaShare {
+    width: 180px;
+    font-family: $font-main;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: $color-orange;
+    padding: 8px 20px 8px 20px;
+    border-radius: 10px;
+    color: $color-white;
+    box-shadow: 0px 3px 15px rgba(109, 76, 35, 0.5);
+    margin: 30px;
 }

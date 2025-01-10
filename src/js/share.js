@@ -1,4 +1,4 @@
-const card = {
+/*const card = {
     field1: '3 personas',
     field2: 'fondo-oscuro',
     field3: 'Título de la receta',
@@ -44,3 +44,13 @@ function renderCard () {
 }
 
 renderCard();
+
+let card ={};
+const idLS = localStorage.getItem ("idCard");
+fetch (`https://dev.adalab.es/api/info/${idLS}`)
+    .then((resp) => resp.json())
+    .then((info) => {
+        card= info.data;
+    });
+
+*/

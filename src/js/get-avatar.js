@@ -31,6 +31,7 @@ function writeImage() {
    * de nuestro componente.
    */
   profilePreview.src = fr.result;
+  data.photo = fr.result;
 }
 
 

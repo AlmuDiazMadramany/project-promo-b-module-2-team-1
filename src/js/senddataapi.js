@@ -1,21 +1,14 @@
 const btnCreate = document.querySelector (".js-btn")
-const dataAPI ={
-    field1: "3", 
-    field2: '1', 
-    field3: '2', 
-    field4: '3', 
-    field5: '4', 
-    field6: '5', 
-    field7: '', 
-    photo: 'https://pucheromix.b-cdn.net/wp-content/uploads/2023/04/bechamel-casera.jpg', 
-};
+
   
 function handleCreate (ev){
     ev.preventDefault ();
-    console.log (dataAPI);
+    console.log (data);
     fetch ("https://dev.adalab.es/api/info/data",{
         method: 'POST', 
-        body: JSON.stringify (dataAPI),
+        body: JSON.stringify (data),
+        headers: {"Content-type": "application/json"},
+        //se tiene que poner siempre que utilizemos el metodo tipo POST
     })
         .then((resp)=> resp.json())
         .then((data) => {

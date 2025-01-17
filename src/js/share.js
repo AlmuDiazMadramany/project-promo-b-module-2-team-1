@@ -8,7 +8,7 @@ function loadFromLocalStorage (){
     }
 }
 
-loadFromLocalStorage ();
+// loadFromLocalStorage ();
 
 
 
@@ -53,9 +53,3 @@ function renderCardSharePage() { // OK
     pasos.innerHTML = cardSharePage.field6;
     console.log("render card in share page");
 }
-
-
-
-getDataFromApi();
-
-//está ejectuando al arrancar la página lo que hay guardado en el LS

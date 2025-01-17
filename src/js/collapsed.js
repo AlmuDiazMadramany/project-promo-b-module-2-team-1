@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Función que alterna la clase 'collapsed' en la sección
     function toggleSection(section) {
         section.classList.toggle('collapsed');
+        console.log("Función: toggleSection");
     }
 
     descriptionBtn.addEventListener('click', function(event) {

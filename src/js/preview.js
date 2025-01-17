@@ -92,5 +92,3 @@ function getDataFromApi() {
             renderCardSharePage()();
         });
 }
-
-getDataFromApi();

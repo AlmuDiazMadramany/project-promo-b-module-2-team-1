@@ -1,12 +1,11 @@
 const btnCreate = document.querySelector (".js-btn")
 
-  
 function handleCreate (ev){
     ev.preventDefault ();
-    console.log (data);
+    console.log ('Data', data);
     fetch ("https://dev.adalab.es/api/info/data",{
         method: 'POST', 
-        body: JSON.stringify (data),
+        body: JSON.stringify(data),
         headers: {"Content-type": "application/json"},
         //se tiene que poner siempre que utilizemos el metodo tipo POST
     })
@@ -15,7 +14,7 @@ function handleCreate (ev){
             if(data.success){
                 localStorage.setItem("idCard", data.infoID);
             } else {
-            // pte innerHTML: poner mensaje error
+                console.log("Error al hacer POST");
             }
             });
         };

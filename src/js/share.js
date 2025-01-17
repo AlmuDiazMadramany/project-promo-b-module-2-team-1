@@ -1,4 +1,4 @@
-/*const card = {
+const card = {
     field1: '3 personas',
     field2: 'fondo-oscuro',
     field3: 'Título de la receta',
@@ -53,4 +53,3 @@ fetch (`https://dev.adalab.es/api/info/${idLS}`)
         card= info.data;
     });
 
-*/

@@ -44,6 +44,12 @@ function render() { // OK
     console.log("render");
 }
 
+function saveToLocalStorage (){
+    localStorage.setItem ("cardData", JSON.stringify(data));
+}
+
+
+
 // Definimos la función manejadora de eventos
 function handleForm(event) { // OK
     const id = event.target.id;
@@ -51,6 +57,7 @@ function handleForm(event) { // OK
     data[id] = value;
     console.log(data);
     console.log("handleform");
+    saveToLocalStorage();
     render();
 }
 
@@ -65,25 +72,25 @@ render();
 
 // let cardSharePage ={};
 
-// function renderCardSharePage() { // OK
-//     comensales.innerHTML = cardSharePage.field1;
-//     imagen.innerHTML = cardSharePage.field2;
-//     nombre.innerHTML = cardSharePage.field3;
-//     tiempo.innerHTML = cardSharePage.field4;
-//     ingredientes.innerHTML = cardSharePage.field5;
-//     pasos.innerHTML = cardSharePage.field6;
-//     console.log("Render card in share page");
-// }
+function renderCardSharePage() { // OK
+    comensales.innerHTML = cardSharePage.field1;
+    imagen.innerHTML = cardSharePage.field2;
+    nombre.innerHTML = cardSharePage.field3;
+    tiempo.innerHTML = cardSharePage.field4;
+    ingredientes.innerHTML = cardSharePage.field5;
+    pasos.innerHTML = cardSharePage.field6;
+    console.log("Render card in share page");
+}
 
-// function getDataFromApi() {
-//     const idLS = localStorage.getItem ("idCard");
-//     fetch (`https://dev.adalab.es/api/info/${idLS}`)
-//         .then((resp) => resp.json())
-//         .then((info) => {
-//             cardSharePage = info.data;
-//             console.log(cardSharePage);
-//             renderCardSharePage()();
-//         });
-// }
+function getDataFromApi() {
+    const idLS = localStorage.getItem ("cardData");
+    fetch (`https://dev.adalab.es/api/info/${idLS}`)
+        .then((resp) => resp.json())
+        .then((info) => {
+            cardSharePage = info.data;
+            console.log(cardSharePage);
+            renderCardSharePage()();
+        });
+}
 
-// getDataFromApi();
+getDataFromApi();

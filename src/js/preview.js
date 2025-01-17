@@ -1,7 +1,7 @@
 // Declaramos el objeto, compatible con la API
 const data = {
     field1: 0, // número de comensales 
-    field2: 'fondo-oscuro', // diseño de tarjeta OJO: 3 INPUTS, 1 X DISEÑO
+    field2: 'fondo-oscuro', // diseño de tarjeta. Por defecto guarda este valor.
     field3: '', // nombre de la receta (string)
     field4: '', // tiempo de preparación
     field5: '', // ingredientes
@@ -10,11 +10,12 @@ const data = {
     photo: '', // imagen receta
 }
 
+
 // Identificamos el formulario
 const form = document.querySelector('.js-form');
 
 
-// Identificamos los elementos de la preview
+// Identificamos los elementos de la preview // OK
 const comensales = document.querySelector('.recipe1_mainrecipe_dinersinput');
 const imagen = document.querySelector('.recipe1_image');
 const nombre = document.querySelector('.recipe1_mainrecipe_title');
@@ -23,7 +24,7 @@ const ingredientes = document.querySelector('.recipe2_ingredients_input');
 const pasos = document.querySelector('.recipe2_steps_input');
 
 
-// Textos de ejemplo
+// Textos de ejemplo // OK
 const placeholders = {
     field1: '3 personas',
     field3: 'Título de la receta',
@@ -33,62 +34,35 @@ const placeholders = {
 };
 
 
-
-// Definimos la función de renderizado (placeholders es el ejemplo)
-function render() { // OK
+// Definimos la función de renderizado (placeholders es el ejemplo) // OK
+function render() {
     comensales.innerHTML = data.field1 || placeholders.field1;
     nombre.innerHTML = data.field3 || placeholders.field3;
     tiempo.innerHTML = data.field4 || placeholders.field4;
     ingredientes.innerHTML = data.field5 || placeholders.field5;
     pasos.innerHTML = data.field6 || placeholders.field6;
-    console.log("render");
 }
 
+
+// Guardar datos en LocalStorage // OK
 function saveToLocalStorage (){
     localStorage.setItem ("cardData", JSON.stringify(data));
 }
 
 
-
-// Definimos la función manejadora de eventos
-function handleForm(event) { // OK
+// Definimos la función manejadora de eventos // OK
+function handleForm(event) {
     const id = event.target.id;
     const value = event.target.value;
-    data[id] = value;
-    console.log(data);
-    console.log("handleform");
-    saveToLocalStorage();
-    render();
+    data[id] = value; // metemos en el objeto que lanzamos a la API la info
+    // saveToLocalStorage(); // Va completando los campos en el LS a medida que escribimos. No hace falta porque lo llevamos ahí al hacer click en Generar
+    render(); // Pinta en la preview mientras vamos escribiendo
 }
+
 
 // Llamamos a la función que actualiza la preview
 form.addEventListener('input', handleForm);
 
-render();
 
-
-
-// // SHARE PAGE
-
-// let cardSharePage ={};
-
-function renderCardSharePage() { // OK
-    comensales.innerHTML = cardSharePage.field1;
-    imagen.innerHTML = cardSharePage.field2;
-    nombre.innerHTML = cardSharePage.field3;
-    tiempo.innerHTML = cardSharePage.field4;
-    ingredientes.innerHTML = cardSharePage.field5;
-    pasos.innerHTML = cardSharePage.field6;
-    console.log("Render card in share page");
-}
-
-function getDataFromApi() {
-    const idLS = localStorage.getItem ("cardData");
-    fetch (`https://dev.adalab.es/api/info/${idLS}`)
-        .then((resp) => resp.json())
-        .then((info) => {
-            cardSharePage = info.data;
-            console.log(cardSharePage);
-            renderCardSharePage()();
-        });
-}
+// Llamamos a la función que actualiza la preview
+// render(); // No hace falta porque lo renderiza en el HandleForm()

@@ -1,5 +1,7 @@
-// Declaramos el objeto, compatible con la API
-const data = {
+'use strict';
+
+// Declaramos el objeto, compatible con la API // OK
+let data = {
     field1: 0, // número de comensales 
     field2: 'fondo-oscuro', // diseño de tarjeta. Por defecto guarda este valor.
     field3: '', // nombre de la receta (string)
@@ -11,11 +13,8 @@ const data = {
 }
 
 
-// Identificamos el formulario
+// Identificamos el formulario y sus elementos // OK
 const form = document.querySelector('.js-form');
-
-
-// Identificamos los elementos de la preview // OK
 const comensales = document.querySelector('.recipe1_mainrecipe_dinersinput');
 const imagen = document.querySelector('.recipe1_image');
 const nombre = document.querySelector('.recipe1_mainrecipe_title');
@@ -45,24 +44,19 @@ function render() {
 
 
 // Guardar datos en LocalStorage // OK
-function saveToLocalStorage (){
-    localStorage.setItem ("cardData", JSON.stringify(data));
-}
+// function saveToLocalStorage (){
+//     localStorage.setItem ("cardData", JSON.stringify(data));
+// }
 
 
 // Definimos la función manejadora de eventos // OK
 function handleForm(event) {
     const id = event.target.id;
     const value = event.target.value;
-    data[id] = value; // metemos en el objeto que lanzamos a la API la info
-    // saveToLocalStorage(); // Va completando los campos en el LS a medida que escribimos. No hace falta porque lo llevamos ahí al hacer click en Generar
+    data[id] = value; // metemos en el objeto data la info de todos los campos de la receta que lanzamos a la API
     render(); // Pinta en la preview mientras vamos escribiendo
 }
 
 
 // Llamamos a la función que actualiza la preview
 form.addEventListener('input', handleForm);
-
-
-// Llamamos a la función que actualiza la preview
-// render(); // No hace falta porque lo renderiza en el HandleForm()

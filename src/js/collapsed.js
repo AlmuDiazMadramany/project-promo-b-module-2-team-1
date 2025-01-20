@@ -1,3 +1,5 @@
+'use strict';
+
 // Espera que el documento este cargado
 document.addEventListener('DOMContentLoaded', function() {
     // Botones para mostrar o esconder las secciones

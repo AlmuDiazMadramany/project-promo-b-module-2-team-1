@@ -1,4 +1,6 @@
-// Coger los datos del HTML de SHARE
+'use strict';
+
+// Coger los datos del HTML de SHARE // OK
 const comensalesShare = document.querySelector('.recipe1_mainrecipe_dinersinput');
 const imagenShare = document.querySelector('.recipe1_image');
 const nombreShare = document.querySelector('.recipe1_mainrecipe_title');
@@ -8,8 +10,8 @@ const pasosShare = document.querySelector('.recipe2_steps_input');
 const sectionCardShare = document.querySelector (".js-sectionCard");
 
 
-let cardSharePage = '';
-let idLS = '';
+let cardSharePage = '';  // OK
+
 
 
 function renderCardSharePage() { // OK
@@ -21,7 +23,7 @@ function renderCardSharePage() { // OK
     pasosShare.innerHTML = cardSharePage.field6;
 }
 
-function renderDesign() {
+function renderDesign() {  // OK
     if (cardSharePage.field2 === "vintage") {
         sectionCardShare.classList.add("theme-1");
     } else if (cardSharePage.field2 === "bordeado") {
@@ -31,18 +33,32 @@ function renderDesign() {
     };
 };
 
+
+// const idLS = localStorage.getItem("idCard");
+// fetch(`https://dev.adalab.es/api/info/${idLS}`)
+//         .then((response) => response.json())
+//         .then((info) => {
+//             console.log('Datos recogidos del API:', info);
+//             cardSharePage = info.data;
+//             console.log('Datos de cardSharePage:', cardSharePage);
+//             renderCardSharePage();
+//             renderDesign();
+//         });
+
+
+let idLS = '';
+
 function loadFromLocalStorage(){
-    const savedData = localStorage.getItem("idCard");
+    idLS = localStorage.getItem("idCard");
      // coge el ID que está guardado en LS
-    if (savedData !== null){
-        const parsedData = JSON.parse(savedData);
-        idLS = parsedData; // Asigna los datos parseados a la variable `idLS`
+    if (idLS !== null){
+        // const parsedData = JSON.parse(idLS);
+        // idLS = parsedData; // Asigna los datos parseados a la variable `idLS`
         console.log('Hay datos en el LS:', idLS);
         } else {
         console.log('No hay datos en el LS');
     }
 }
-
 
 function getDataFromApi(){
     loadFromLocalStorage();
@@ -56,6 +72,5 @@ function getDataFromApi(){
             renderDesign();
         });
 }
-
 
 getDataFromApi();

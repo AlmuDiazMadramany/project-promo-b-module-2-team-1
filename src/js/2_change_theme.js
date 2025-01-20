@@ -1,3 +1,5 @@
+'use strict';
+
 // ELEMENTOS HTML
 const radio1 = document.querySelector (".js-radio-1");
 const radio2 = document.querySelector (".js-radio-2");

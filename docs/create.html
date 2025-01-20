@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CookCard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    
+    <link rel="icon" href="./images/logo_white_background.png" />
+    <link rel="stylesheet" href="./assets/main-ff32c450.css">
+  </head>
+
+  <body class="createBody">
+    <header class="header">
+    <img src="./images/logo_white.png" alt="CookCard" class="logoheader">
+    <p class="header_p">Cook<span class="header_span">Card</span>
+    </p>
+</header>
+
+
+    <main class="createMain">
+      <div class="createpreview">
+        <div class="cardstyle">
+          <div class="card theme-3 js-sectionCard">
+  <section class="recipe1">
+    <img
+      src="https://pucheromix.b-cdn.net/wp-content/uploads/2023/04/bechamel-casera.jpg"
+      alt=""
+      class="recipe1_image js-preview"/>
+    <div class="recipe1_mainrecipe">
+      <h2 class="recipe1_mainrecipe_title">Título de la receta</h2>
+      <p class="recipe1_mainrecipe_dinerstile">Nº de comensales:</p>
+      <p class="recipe1_mainrecipe_dinersinput"></p>
+      <p class="recipe1_mainrecipe_timetitle">Tiempo de preparación:</p>
+      <p class="recipe1_mainrecipe_timeinput"></p>
+    </div>
+  </section>
+
+  <section class="recipe2">
+    <div class="recipe2_ingredients">
+      <p class="recipe2_ingredients_title">Ingredientes:</p>
+      <p class="recipe2_ingredients_input"></p>
+    </div>
+    <div class="recipe2_steps">
+      <p class="recipe2_steps_title">Pasos:</p>
+      <p class="recipe2_steps_input"></p>
+    </div>
+  </section>
+</div>
+        </div>
+        <form action="" class="createform js-form">
+          <fieldset class="firstform-container" >
+    <fieldset class="form_design js-btn-design">
+        <div class="form_desing_text">
+            <img  class="design_img" src="./images/design_black.png" alt="">
+            <p class="firstform-title">Elige tu <span class="highlight">diseño</span></p>
+        </div>
+        <img class="btn_down" src="./images/chevron-down-solid.svg" alt="">
+    </fieldset>
+
+    <div class="div_design js-design collapsed" id="options_design ">    
+        <label for= "field2" class="design_options">
+            <input id="field2" type="radio" name="design" value="vintage"  class="input_hidden js-radio-1">
+           <div class="option-circle">1</div>
+           <span class="option-text">Vintage</span>
+        </label>
+
+        <label class="design_options">
+            <input type="radio" name="design" value="bordeado" id="field2" class="input_hidden js-radio-2">
+            <div class="option-circle">2</div>
+            <span class="option-text">Bordeado</span>
+        </label>
+
+        <label class="design_options">
+            <input type="radio" name="design" value="fondo-oscuro" id="field2" class="input_hidden js-radio-3">
+            <div class="option-circle">3</div>
+            <span class="option-text">Oscuro</span>
+        </label>
+       
+    </div>
+    </fieldset>
+          <fieldset class="recipie-container">
+  <p class="title-container js-btn-description">
+    <img class="img" src="./images/write_black.png" alt="" />
+    Describe la <span class="highlight_description">receta </span>
+    <a href="#options_design"
+      ><img class="btn_down" src="./images/chevron-down-solid.svg" alt=""
+    /></a>
+  </p>
+
+  <div class="collapsed js-description">
+    <input
+      class="form-input"
+      type="text"
+      name="name"
+      id="field3"
+      placeholder=" Nombre de la receta"
+      required
+    />
+
+    <input
+      class="form-input js-select-image input-img"
+      type="file"
+      name="image"
+      id="photo"
+      placeholder=" Sube tu foto"
+      required
+    />
+
+    <input
+      class="form-input"
+      type="number"
+      name="number"
+      id="field1"
+      placeholder=" Número de comensales"
+      required
+    />
+    <input
+      class="form-input"
+      type="text"
+      name="text"
+      id="field4"
+      placeholder=" Tiempo de preparación (ej: 60 min)"
+      required
+    />
+
+    <textarea
+      class="form-input textarea"
+      type="text"
+      name="text"
+      id="field5"
+      placeholder=" Ingredientes"
+      required
+    ></textarea>
+    <textarea
+      class="form-input textarea"
+      type="number"
+      name="number"
+      id="field6"
+      placeholder=" Pasos"
+    ></textarea>
+  </div>
+</fieldset>
+          <div class="container-btnreset">
+    <button type="button" class="btnreset js-btnreset"> <img src="./images/white-reload.png" alt="reset" class="btnreset-img">Reset</button>
+</div>
+          <div class="container-btn">
+    <button class="btn js-btn" href="./share.html"><img src="./images/link_white.png" alt="Generar" class="btn-img">Generar</button>
+    <a class="linkToShare" href="http://localhost:5173/share.html"></a>
+</div>
+        </form>
+      </div>
+      <article class="redes">
+    <div class="hidden js-icon">
+        <a class="linkShare" href="./share.html">¡Accede a tu receta!</a>
+        <div class="redes-sociales">
+            <p>Comparte en tus redes sociales:</p>
+            <div class="icons">
+                <img src="./images/media_x.png" alt="X" class="icon-x">
+                <img src="./images/face.ico" alt="facebook">
+                <img src="./images/instagram.ico" alt="instagram">
+            </div>
+        </div>
+    </div>
+</article>
+    </main>
+
+    <footer class="footer">
+    <p class="footer_p">&copy; Cook<span class="footer_span">Card,</span> 2024</p>
+</footer>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

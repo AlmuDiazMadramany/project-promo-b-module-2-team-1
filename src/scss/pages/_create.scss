@@ -2,19 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
+    // overflow-x: hidden;
   }
 
 .createBody {
-    // background-color: $color-background;
+    background-color: $color-background;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.createMain {
-    height: calc(100vh - 100px);
-}
+// .createMain {
+//     height: calc(100vh - 100px);
+// }
 
 .cardstyle{
     height: auto;

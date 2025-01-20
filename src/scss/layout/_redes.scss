@@ -1,33 +1,47 @@
-.hidden{ /*Display para esconder los iconos de redes*/
-    display: none;
+.hidden {
+  /*Display para esconder los iconos de redes*/
+  display: none;
 }
 
-.redes {/*Display para los iconos de redes*/
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.redes {
+  /*Display para los iconos de redes*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .redes-sociales {
-    text-align: center; 
-    font-family: Arial, sans-serif; 
-    color: $color-orange; 
-    margin-bottom: 35px;
-    margin-top: 25px;    
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: $color-orange;
+  margin-bottom: 35px;
+  margin-top: 25px;
 }
-  
+
 .redes-sociales p {
-    font-size: 16px; 
+  font-size: 16px;
 }
-  
+
 .icons img {
-    width: 25px; 
-    margin: 0 5px 10px; /* Espacio horizontal entre íconos */
-    padding-top: 35px;
-    cursor: pointer; /* Cambia al pasar por encima */
-    transition: transform 0.7s ease; /* Efecto suave al pasar el cursor */
+  width: 25px;
+  margin: 0 5px 10px; /* Espacio horizontal entre íconos */
+  padding-top: 20px;
+  cursor: pointer; /* Cambia al pasar por encima */
+  transition: transform 0.7s ease; /* Efecto suave al pasar el cursor */
 }
-  
+
 .icons img:hover {
-    transform: scale(0.8); /* cambia de tamaño al pasar el mouse */
+  transform: scale(0.8); /* cambia de tamaño al pasar el mouse */
+}
+
+.linkShare {
+    font-family: $font-main;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: $color-orange;
+    padding: 8px 20px 8px 20px;
+    border-radius: 10px;
+    color: $color-white;
+    box-shadow: 0px 3px 15px rgba(109, 76, 35, 0.5);
 }

@@ -1,11 +1,11 @@
-
-.container-btnreset{
+.container-btnreset {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 8vh;
     width: 65%;
 }
+
 .btnreset {
     padding: 6px 45px;
     background-color: $color-black;
@@ -18,11 +18,11 @@
     font-size: 23px;
     cursor: pointer;
 }
-.btnreset-img{
+.btnreset-img {
     width: 23px;
     transform: translateX(-5px);
-    
 }
+
 .btnreset:hover{
     background-color: $color-orange;
     transform: scale(1.1); /* Aumento de tamaño al pasar el mouse */

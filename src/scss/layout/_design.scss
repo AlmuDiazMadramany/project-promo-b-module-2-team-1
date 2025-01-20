@@ -1,111 +1,103 @@
-
-.firstform-container{
-    border: 2px solid #ccc;
-    border-radius: 8px;
-    padding: 20px;
-    max-width: 100vh;
-    margin: 30px 10px;
-    @media (min-width: 768px) {
-          max-width: 80vw;
-          margin: 20px auto;
-          padding: 40px 80px;
-        }
-    
-
+.firstform-container {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 100vh;
+  margin: 30px 10px;
+  @media (min-width: 768px) {
+    max-width: 80vw;
+    margin: 20px auto;
+    padding: 40px 80px;
+  }
 }
 
-.form_design{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    padding: 20px;
+.form_design {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
 }
 .form_desing_text {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-.firstform-title{
-    font-size: 2rem;
-    font-family: $font-main;
-    font-weight: 100;
-    padding: 5px;
-    display: flex;
-    
+.firstform-title {
+  font-size: 2rem;
+  font-family: $font-main;
+  font-weight: 100;
+  padding: 5px;
+  display: flex;
 }
-
 
 .design_img {
-    width: 30px;
-    height: 30px;
-    margin-right: 9px;
-    margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  margin-right: 9px;
+  margin-left: 5px;
 }
 
 //hay un margin-left que no puedo quitar
-.highlight{
-    font-weight: bold;
-    font-size: 2rem;
-    margin-left: 15px;
-
+.highlight {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-left: 15px;
 }
 
 .btn_down {
-    width: 25px;
-    margin-right: 10px;
-    align-items: center;
-    cursor: pointer;/*AnaM he añadido el cursor pointer*/
+  width: 25px;
+  margin-right: 10px;
+  align-items: center;
+  cursor: pointer; /*AnaM he añadido el cursor pointer*/
 }
 
 /* Contenedor de opciones de diseño */
 .div_design {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
 }
 
 .input_hidden {
-    display: none;
+  display: none;
 }
 
+.desgin_options {
+  margin: 15px;
 
-.desgin_options{
-    margin: 15px;
-
-    @media (min-width: 768px) {
-        .form-input {
-            font-size: 14px;
-            margin-bottom: 20px;
-          }
+  @media (min-width: 768px) {
+    .form-input {
+      font-size: 14px;
+      margin-bottom: 20px;
     }
+  }
 }
 
 .option-text {
-    font-size: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 20px;
-    font-family: $font-secondary;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  font-family: $font-secondary;
 }
 
-
-.option-circle{
-    border: 2px solid #ccc;
-    background-color: rgba(196, 193, 193, 0.842);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 40px;
-    font-weight: bold;
-    width: 60px;
-    height: 60px;
-    border-radius: 100%;
-    color: black;
-    text-decoration: none;
-    cursor: pointer;/*AnaM he añadido el cursor pointer*/
+.option-circle {
+  border: 2px solid #ccc;
+  background-color: rgba(196, 193, 193, 0.842);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: bold;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  color: black;
+  text-decoration: none;
+  cursor: pointer; /*AnaM he añadido el cursor pointer*/
 }

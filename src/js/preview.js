@@ -1,6 +1,6 @@
 'use strict';
 
-// Declaramos el objeto, compatible con la API // OK
+// Declaramos el objeto, compatible con la API
 let data = {
     field1: 0, // número de comensales 
     field2: 'fondo-oscuro', // diseño de tarjeta. Por defecto guarda este valor.
@@ -13,7 +13,7 @@ let data = {
 }
 
 
-// Identificamos el formulario y sus elementos // OK
+// Identificamos el formulario y sus elementos
 const form = document.querySelector('.js-form');
 const comensales = document.querySelector('.recipe1_mainrecipe_dinersinput');
 const imagen = document.querySelector('.recipe1_image');
@@ -23,7 +23,7 @@ const ingredientes = document.querySelector('.recipe2_ingredients_input');
 const pasos = document.querySelector('.recipe2_steps_input');
 
 
-// Textos de ejemplo // OK
+// Textos de ejemplo
 const placeholders = {
     field1: '3 personas',
     field3: 'Título de la receta',
@@ -33,7 +33,7 @@ const placeholders = {
 };
 
 
-// Definimos la función de renderizado (placeholders es el ejemplo) // OK
+// Definimos la función de renderizado (placeholders es el ejemplo)
 function render() {
     comensales.innerHTML = data.field1 || placeholders.field1;
     nombre.innerHTML = data.field3 || placeholders.field3;
@@ -43,18 +43,12 @@ function render() {
 }
 
 
-// Guardar datos en LocalStorage // OK
-// function saveToLocalStorage (){
-//     localStorage.setItem ("cardData", JSON.stringify(data));
-// }
-
-
-// Definimos la función manejadora de eventos // OK
+// Recogemos los valores de los inputs y renderizamos en la preview en tiempo real
 function handleForm(event) {
     const id = event.target.id;
     const value = event.target.value;
     data[id] = value; // metemos en el objeto data la info de todos los campos de la receta que lanzamos a la API
-    render(); // Pinta en la preview mientras vamos escribiendo
+    render();
 }
 
 

@@ -1,6 +1,6 @@
 'use strict';
 
-// Coger los datos del HTML de SHARE // OK
+// Coger los datos del HTML de Share
 const comensalesShare = document.querySelector('.recipe1_mainrecipe_dinersinput');
 const imagenShare = document.querySelector('.recipe1_image');
 const nombreShare = document.querySelector('.recipe1_mainrecipe_title');
@@ -10,11 +10,12 @@ const pasosShare = document.querySelector('.recipe2_steps_input');
 const sectionCardShare = document.querySelector (".js-sectionCard");
 
 
-let cardSharePage = {};  // OK
+let cardSharePage = {};
+let idLS = '';
 
 
-
-function renderCardSharePage() { // OK
+// Renderizar los campos y la imagen
+function renderCardSharePage() {
     comensalesShare.innerHTML = cardSharePage.field1;
     imagenShare.src = cardSharePage.photo;
     nombreShare.innerHTML = cardSharePage.field3;
@@ -23,7 +24,9 @@ function renderCardSharePage() { // OK
     pasosShare.innerHTML = cardSharePage.field6;
 }
 
-function renderDesign() {  // OK
+
+// Aplicar el diseño de la tarjeta
+function renderDesign() {
     if (cardSharePage.field2 === "vintage") {
         sectionCardShare.classList.add("theme-1");
     } else if (cardSharePage.field2 === "bordeado") {
@@ -34,32 +37,19 @@ function renderDesign() {  // OK
 };
 
 
-// const idLS = localStorage.getItem("idCard");
-// fetch(`https://dev.adalab.es/api/info/${idLS}`)
-//         .then((response) => response.json())
-//         .then((info) => {
-//             console.log('Datos recogidos del API:', info);
-//             cardSharePage = info.data;
-//             console.log('Datos de cardSharePage:', cardSharePage);
-//             renderCardSharePage();
-//             renderDesign();
-//         });
-
-
-let idLS = '';
-
+// Recoger el ID de LS
 function loadFromLocalStorage(){
     idLS = localStorage.getItem("idCard");
      // coge el ID que está guardado en LS
     if (idLS !== null){
-        // const parsedData = JSON.parse(idLS);
-        // idLS = parsedData; // Asigna los datos parseados a la variable `idLS`
         console.log('Hay datos en el LS:', idLS);
         } else {
         console.log('No hay datos en el LS');
     }
 }
 
+
+// Con el ID, buscar la tarjeta en el API
 function getDataFromApi(){
     loadFromLocalStorage();
     fetch(`https://dev.adalab.es/api/info/${idLS}`)
@@ -73,4 +63,6 @@ function getDataFromApi(){
         });
 }
 
+
+// Montar la tarjeta
 getDataFromApi();

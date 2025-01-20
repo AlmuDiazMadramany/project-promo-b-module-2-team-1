@@ -1,10 +1,11 @@
-.container-btn{
+.container-btn {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 8vh;
     width: 65%;
 }
+
 .btn {
     padding: 6px 45px;
     background-color: $color-black;
@@ -17,11 +18,12 @@
     font-size: 23px;
     cursor: pointer;
 }
-.btn-img{
+
+.btn-img {
     width: 23px;
     transform: translateX(-5px);
-    
 }
+
 .btn:hover {
     transform: scale(1.1); /* Aumento de tamaño al pasar el mouse */
     transition: transform 0.1s ease; /* Efecto suave al pasar el cursor */

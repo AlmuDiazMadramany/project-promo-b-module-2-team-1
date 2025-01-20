@@ -1,6 +1,6 @@
 'use strict';
 
-// Buscar la ID en el LS y cargar desde el API la tarjeta
+// Postear la tarjeta creada en la preview en el API y recoger el ID
 function handleCreate(ev){
     ev.preventDefault();
     console.log('Data', data); // Loguea lo que hemos guardado en data (para la API)

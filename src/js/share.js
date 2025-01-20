@@ -10,13 +10,13 @@ const pasosShare = document.querySelector('.recipe2_steps_input');
 const sectionCardShare = document.querySelector (".js-sectionCard");
 
 
-let cardSharePage = '';  // OK
+let cardSharePage = {};  // OK
 
 
 
 function renderCardSharePage() { // OK
     comensalesShare.innerHTML = cardSharePage.field1;
-    imagenShare.innerHTML = cardSharePage.field2;
+    imagenShare.src = cardSharePage.photo;
     nombreShare.innerHTML = cardSharePage.field3;
     tiempoShare.innerHTML = cardSharePage.field4;
     ingredientesShare.innerHTML = cardSharePage.field5;

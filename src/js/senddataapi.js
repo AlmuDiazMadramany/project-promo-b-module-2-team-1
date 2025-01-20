@@ -1,6 +1,6 @@
 const btnCreate = document.querySelector (".js-btn");
 
-// Al clicar en Generate, 
+// Buscar la ID en el LS y cargar desde el API la tarjeta
 function handleCreate(ev){
     ev.preventDefault();
     console.log('Data', data); // Loguea lo que hemos guardado en data (para la API)
@@ -22,4 +22,5 @@ function handleCreate(ev){
             });
         };
 
+// Ejecutar la función al clicar en Generar
 btnCreate.addEventListener ("click", handleCreate);

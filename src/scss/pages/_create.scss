@@ -5,12 +5,15 @@
     overflow-x: hidden;
   }
 
-
 .createBody {
     background-color: $color-background;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.createMain {
+    height: calc(100vh - 100px);
 }
 
 .cardstyle{
@@ -22,6 +25,7 @@
         margin-left: 60px;
     }
 }
+
 .createform {
     display: flex;
     flex-direction: column;
@@ -41,11 +45,5 @@
         overflow-x: hidden;
         width: auto;
         height: auto;
-        
-        /*
-        display: flex;
-        flex-direction: row;
-        width: auto;
-        height: auto;*/
     }
 }
